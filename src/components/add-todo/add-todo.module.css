@@ -1,0 +1,58 @@
+.container {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgb(62, 141, 82);
+    background: none;
+    border: 2px solid rgb(62, 141, 82);
+    border-radius: 0.2em;
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    user-select: none;
+}
+
+.button:hover {
+    background: rgb(62, 141, 82);
+    color: white;
+}
+
+.button:disabled {
+    color: #8d8d8d;
+    border: solid 2px #8d8d8d;
+}
+
+.button:disabled:hover {
+    color: #8d8d8d;
+    background: none;
+}
+
+.todo, .description {
+    padding: 6px 8px;
+    border-radius: 0.2em; 
+    border: 2px solid #8d8d8d;
+    font-size: 12pt;
+}
+
+.description {
+    font-size: 12pt;
+    resize: none;
+    height: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.todo:focus, .description:focus {
+    outline: none;
+}
+
+.todo+.description {
+    margin-top: 8px;
+}

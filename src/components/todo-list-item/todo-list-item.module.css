@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: top;
     margin-bottom: 10px;
+    user-select: none;
 }
 
 .content {
